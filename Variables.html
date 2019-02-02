@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>  
+    <br>
+    <script>
+//variables
+    var name = "Nivetha";
+    var age = 23;
+    var marital_status = "Single"; 
+//loop statement
+    var loopie = 0; 
+     while(loopie < 5){
+         document.write('Loopie count'+ loopie + "<br>");
+         loopie++;
+     }
+
+// if-statement
+    var if1 = 30;
+    var if2 = 50;
+    if(if1 < if2){
+        alert(if1 + ' is the Smallest number');
+    }
+ // Addition of numbers
+    var v1 = 10;
+    var v2 = 40;
+         function addnumber(){
+        var result = v1+v2;
+        document.getElementById('calc').innerHTML = result;
+    }
+//Arrays 
+    var ARRAYME_HERE = new Array(10,20,"life is beautiful",40, "Dream Big");
+
+function arraysclick(){
+    document.getElementById('arr').innerHTML = ARRAYME_HERE;
+}
+
+//math function
+var m1 =1;
+var m2=2;
+var calculation;
+
+calculation = m1+m2;
+document.write(calculation);
+
+    </script>
+    <br>
+
+    <ul>
+        <li>
+            Name: <script>document.write(name);
+            </script>
+        </li>
+        <li>
+        Age: <script>document.write(age);
+            </script>
+        </li>
+        <li>
+            Marital_status: <script>document.write(marital_status);
+            </script>
+        </li>
+    </ul>
+    <h1>Added Results:</h1>
+    <h1 id="calc"></h1>
+    <button onclick="addnumber();" id="theButton" class="btn btn-primary">SUBMIT</button>
+
+    <button onclick="arraysclick();" id ="btnid" class="btn btn-primary"> Array_Submit</button>
+    <h1 id="arr"></h1>
+</body>
+</html>
